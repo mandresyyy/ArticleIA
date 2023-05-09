@@ -24,7 +24,7 @@ Route::Post('/IABlog/Checking_information',[Login_contr::class,"to_log"])->name(
 
 Route::get('/IABlog/admin_home',[Admin_contr::class,"acceuil"])->name("Acceuil_a");
 
-Route::get('/IABlog/actualite',[User_contr::class,"acceuil"])->name("Acceuil_u");
+Route::get('/',[User_contr::class,"acceuil"])->name("Acceuil_u");
 
 Route::get('/Article_en_attente',[Admin_contr::class,"Attente"])->name("En_attente");
 
